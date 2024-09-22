@@ -7,7 +7,8 @@ Nadzira Rifqi Amin Rinawan (L0123104)
 
 ### Contoh Pengujian
 Jika pengguna memasukkan angka 5, 5, 5, 1, program akan memeriksa semua kombinasi dari angka-angka ini dengan operasi +, -, *, /, serta urutan operasi menggunakan tanda kurung. Misalnya, salah satu ekspresi yang dihasilkan adalah:  
-(5-1)*5-5 = 20
+  
+**| (5-1)*5-5 = 20 |**
 
 ### Penjelasan Singkat tentang Program
 
