@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hasil Perhitungan</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style1.css') }}">
 </head>
 <body>
-    <div class="bg-utama">
+    <header>
         <h1>20 Solver</h1>
-        <p>Terdapat {{num_solutions}} solusi yang ditemukan</p>
+    </header>
+    <div class="container">
+        <div class="title">
+            <p>Terdapat {{num_solutions}} solusi yang ditemukan : </p>    
+            <a class="links" href="/">Kembali ke Input</a>
+        </div>
+        <div>
+            <ul class="solutions-list">
+                {% for solution in solutions %}
+                <li>{{ solution }}</li>
+                {% endfor %}
+            </ul>
+        </div>    
     </div>
     
-    <div class="margin">
-        <ul class="solutions-list">
-            {% for solution in solutions %}
-            <li>{{ solution }}</li>
-            {% endfor %}
-        </ul>
-    </div>
-    <a id="links" href="/">Kembali ke Input</a>
+    
 </body>
 </html>

@@ -6,25 +6,39 @@
     <title>Input Angka</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
+<link rel="stylesheet" href="styles.css">
 <body>
-    <div class="bg-utama">
+    <header>
         <h1>20 Solver</h1>
-    </div>
+    </header>
+
+    <main>
         
-    
-    <div id="center" class="margin">
-        <h2>Masukkan 4 Angka</h2>
-        <form action="/calculate" method="POST">
-            <label for="number1">Angka 1:</label>
-            <input type="text" id="number1" name="number1"><br><br>
-            <label for="number2">Angka 2:</label>
-            <input type="text" id="number2" name="number2"><br><br>
-            <label for="number3">Angka 3:</label>
-            <input type="text" id="number3" name="number3"><br><br>
-            <label for="number4">Angka 4:</label>
-            <input type="text" id="number4" name="number4"><br><br>
-            <input type="submit" value="Hitung">
-        </form>
-    </div>
+        <div class="container">
+            <div class="title"><h3>Masukkan 4 Angka</h3></div>
+            <form action="/calculate" method="POST">
+                <div class="details">
+                    <div class="input">
+                        <span class="input_title">Angka Pertama</span>
+                        <input type="text" id="number1" name="number1" placeholder="Masukkan angka pertama">
+                    </div>
+                    <div class="input">
+                        <span class="input_title">Angka Kedua</span>
+                        <input type="text" id="number2" name="number2" placeholder="Masukkan angka kedua">
+                    </div>
+                    <div class="input">
+                        <span class="input_title">Angka Ketiga</span>
+                        <input type="text" id="number3" name="number3" placeholder="Masukkan angka ketiga">
+                    </div>
+                    <div class="input">
+                        <span class="input_title">Angka Keempat</span>
+                        <input type="text" id="number4" name="number4" placeholder="Masukkan angka keempat">
+                    </div> 
+                </div>
+                <div class="submit"><input type="submit" value="Hitung"></div>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
