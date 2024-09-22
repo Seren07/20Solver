@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Angka</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="bg-utama">
+        <h1>20 Solver</h1>
+    </div>
+        
+    
+    <div id="center" class="margin">
+        <h2>Masukkan 4 Angka</h2>
+        <form action="/calculate" method="POST">
+            <label for="number1">Angka 1:</label>
+            <input type="text" id="number1" name="number1"><br><br>
+            <label for="number2">Angka 2:</label>
+            <input type="text" id="number2" name="number2"><br><br>
+            <label for="number3">Angka 3:</label>
+            <input type="text" id="number3" name="number3"><br><br>
+            <label for="number4">Angka 4:</label>
+            <input type="text" id="number4" name="number4"><br><br>
+            <input type="submit" value="Hitung">
+        </form>
+    </div>
+</body>
+</html>
