@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-# Halaman utama dengan formulir input
+# Halaman utama 
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -17,7 +17,7 @@ def calculate():
         number3 = int(request.form['number3'])
         number4 = int(request.form['number4'])
 
-        # Memasukkan angka ke dalam fungsi solve_for_20_unique
+        # Memasukkan angka 
         numbers = [number1, number2, number3, number4]
         solutions = solve_for_20_unique(numbers)
 
