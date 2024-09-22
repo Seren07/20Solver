@@ -38,4 +38,4 @@ __|(5-1)*5-5 = 20|__
   
 ### Link Pengumpulan
 link deploy : https://20solver.pythonanywhere.com/  
-link video : https://drive.google.com/file/d/1sZTxyxVCMOts-jAZ7GdcSwWntD_yndt4/view?usp=sharing
+link video : https://drive.google.com/file/d/1cS7Fwx2X832EBDclM88fZ1AZzOrztOHR/view?usp=sharing
