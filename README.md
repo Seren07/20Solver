@@ -24,6 +24,7 @@ Di dalam program, sudah disiapkan segala kemungkinan ekspresi yang bisa dibentuk
 
 #### Menghitung Operasi
 Program menggunakan eval() untuk mengevaluasi ekspresi matematika yang dihasilkan dari kombinasi angka, operator, dan template.Setiap ekspresi diuji apakah menghasilkan nilai 20.  
+  
 Jika hasilnya adalah 20, ekspresi tersebut dianggap sebagai solusi dan disimpan dalam kumpulan solusi unik (unique_solutions).
 
 #### Menampilkan Hasil
