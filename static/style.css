@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background:rgb(79, 79, 130);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    color: gold;
+    padding: 25px;
+}
+
+.container{
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+
+.container .title {
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background:rgb(79, 79, 130); ;
+}
+
+.container form .details{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .details .input{
+    width: calc(100%/2-20px);
+    margin-bottom: 15px;
+}
+
+.details .input .input_title{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+
+.details .input input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;;
+    transition: all 0.3s ease;
+}
+
+.details .input input:focus,
+.details .input input:valid{
+    border-color: rgb(79, 79, 130);
+}
+
+form .submit input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    background:rgb(79, 79, 130);
+    padding: 10px;
+}
+
+.solutions-list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Membuat 50 kolom */
+    gap: 10px; 
+    list-style-type: none; /* Menghilangkan bullet points */
+    padding: 0;
+}
+
+.solutions-list li {
+    border: 1px solid #000; /* Untuk membuat solusi lebih terlihat */
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width: 584px) {
+    .container{
+        max-width: 100%;
+    }
+
+    form .details .input{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
